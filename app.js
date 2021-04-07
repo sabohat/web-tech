@@ -67,7 +67,7 @@ app.listen(PORT, (err) => {
 })
 
 //Basic API
-app.get('/api/v1/blogs', (req, res) =>{
+app.get('/api/v1/all-blogs', (req, res) =>{
     fs.readFile('./data/blogs.json', (err, data) => {
         if (err) throw err
 
