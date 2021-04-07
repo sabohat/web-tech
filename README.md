@@ -2,6 +2,12 @@
 
 Blog app is a web application for writing and reading bloggs.
 
+## Deploy
+
+[Github code](https://github.com/sabohat/web-tech)
+
+[Glitch deploy](https://pointy-veil-orangutan.glitch.me/) (outdated than github due to Glitch connection issues)
+
 ## Installation
 
 Use the package manager [npm](https://www.npmjs.com/) to install dependencies.
