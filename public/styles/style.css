@@ -138,6 +138,20 @@ dd {
 blockquote {
   margin: 0 0 1rem;
 }
+.error {
+  font-size: 22px;
+  text-align: center;
+  color: red;
+  border: 2px solid red;
+  padding: 15px;
+}
+.success {
+  font-size: 22px;
+  text-align: center;
+  color: green;
+  border: 2px solid green;
+  padding: 15px;
+}
 b,
 strong {
   font-weight: bolder;

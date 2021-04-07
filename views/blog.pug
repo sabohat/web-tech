@@ -1,0 +1,18 @@
+extends layout.pug 
+
+block content 
+    .blog-home3.py-5
+    .container
+        .row.justify-content-center
+        .col-md-12.text-center
+            h3.my-3 Latest News and Blog
+        .row.mt-4
+        
+
+        .col-lg-12
+            h5.date-pos.text-center.text-black.p-3.mt-0.bg-white  #{blog.title} 
+            p.m-t-15.mt-1 #{blog.description}
+            p.m-t-20.mt-5 #{blog.text}
+
+        a.btn.btn-primary.btn-xl.js-scroll-trigger.mr-3(role='button' data-bss-hover-animate='pulse' href=`/all-blogs/${blog.id}/edit`) Edit
+        a.btn.btn-primary.btn-xl.js-scroll-trigger(role='button' data-bss-hover-animate='pulse' href=`/all-blogs/${blog.id}/delete`) Delete

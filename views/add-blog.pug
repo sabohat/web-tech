@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  .container.text-left.d-md-flex.flex-column.mt-0.pt-0.justify-content-center.justify-content-md-start.justify-content-xl-center
+    h2.text-center.mb-1.mt-0.pt-0 Add Blog
+    
+    if error 
+      p.error Oh, An error occured, please try again
+    if success 
+      p.success Saved
+    form(action='/add-blog' method='POST') 
+      .group
+        input(type='text' name='title' required='')
+        span.highlight
+        span.bar
+        label Title
+      .group
+        input(type='text' name='description' required='')
+        span.highlight
+        span.bar
+        label Brief Description
+      .form-group
+        textarea#exampleFormControlTextarea3.form-control(name='textarea' cols='7' rows='7' placeholder='Content')
+      button.btn.btn-primary.btn-xl.js-scroll-trigger(role='button' data-bss-hover-animate='pulse' href='/add-blog' style='width: 287px;background: var(--blue);') Add
