@@ -1,0 +1,65 @@
+doctype html
+
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+  title Creative Blog 
+  link(rel="stylesheet" href="/static/fonts/font-awesome.min.css")
+  link(rel="stylesheet" href="/static/fonts/simple-line-icons.min.css")
+  link(rel='stylesheet' href='/static/styles/style.css')
+
+nav#sidebar-wrapper.navbar.navbar-light.navbar-expand
+  .container
+    button.navbar-toggler.d-none(data-toggle='collapse' data-target='#')
+    .collapse.navbar-collapse
+      ul#sidebar-nav.navbar-nav.sidebar-nav
+        li.nav-item.sidebar-nav-item
+          a.nav-link.js-scroll-trigger(href='/') Home
+        li.nav-item.sidebar-nav-item
+          a.nav-link.js-scroll-trigger(href='/all-blogS') All Blogs
+        li.nav-item.sidebar-nav-item
+          a.nav-link.js-scroll-trigger(href='/add-blog') Create Blog
+        li.nav-item.sidebar-nav-item
+          //- a.nav-link.js-scroll-trigger(href='/blog') Drafts
+header.text-center.d-flex.flex-row.align-items-baseline.masthead(style='background: url("assets/img/bg-masthead.jpg") top, #efb503;')
+  nav.navbar.navbar-light.navbar-expand-md.visible.navigation-clean(style='background: #f1b600;')
+    .container
+      a.navbar-brand(href='index.html') Creative Blog
+      button.navbar-toggler(data-toggle='collapse' data-target='#navcol-1')
+        span.sr-only Toggle navigation
+        span.navbar-toggler-icon
+      #navcol-1.collapse.navbar-collapse.text-dark(style='font-size: 20px;color: rgb(15,15,16);background: rgba(255,255,255,0);')
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='/' style='color: rgb(31,30,30);') Home
+          li.nav-item
+            a.nav-link(href='/all-blogs' style='color: rgb(14,14,14);font-size: 20px;background: rgba(255,255,255,0);') All Blogs
+          li.nav-item
+            a.nav-link(href='/add-blog' style='color: rgb(0,0,0);border-style: none;border-color: var(--blue);') Add Blog
+          li.nav-item
+            a.nav-link(href='/blog' style='color: rgb(14,14,14);font-size: 20px;background: rgba(255,255,255,0);') Draft
+  block content
+
+footer.text-center.footer
+  .container
+    ul.list-inline.mb-5
+      li.list-inline-item
+        a.text-white.social-link.rounded-circle(href='#')
+          i.icon-social-linkedin
+      li.list-inline-item
+        a.text-white.social-link.rounded-circle(href='#')
+          i.icon-paper-plane
+      li.list-inline-item
+        a.text-white.social-link.rounded-circle(href='#')
+          i.icon-social-github
+    p.text-muted.mb-0.small(style='font-size: 15.8px;')
+      br
+      | &ldquo;This web application was created to fulfill Web Technology module&rsquo;s requirements and does not represent an actual company or service&quot;
+      br
+  a.js-scroll-trigger.scroll-to-top.rounded(href='#page-top')
+    i.fa.fa-angle-up
+script(src='assets/js/jquery.min.js')
+script(src='assets/bootstrap/js/bootstrap.min.js')
+script(src='assets/js/bs-init.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js')
+script(src='assets/js/Material-Text-Input.js')
