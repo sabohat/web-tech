@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const fs = require('fs')
-const PORT = 8000
+const PORT = 5000
 
 app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
@@ -55,8 +55,6 @@ app.post('/add-blog', (req, res) => {
 
 
 
-// get archive blogs
-
 
 app.get('/blog', (req, res) => {
     res.render('blog')
@@ -68,8 +66,8 @@ app.listen(PORT, (err) => {
     console.log(`This app is running on port ${PORT}`)
 })
 
-
-app.get('/api/v1/notes', (req, res) =>{
+//Basic API
+app.get('/api/v1/blogs', (req, res) =>{
     fs.readFile('./data/blogs.json', (err, data) => {
         if (err) throw err
 
@@ -87,7 +85,7 @@ function id() {
     return '_' + Math.random().toString(36).substr(2, 9);
 }
 
-// http://localhost:8000
+// http://localhost:5000
 app.get('/', (req, res) => {
     res.render('main')
 })

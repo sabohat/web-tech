@@ -21,11 +21,11 @@ body
           li.nav-item.sidebar-nav-item
             a.nav-link.js-scroll-trigger(href='/add-blog') Create Blog
           li.nav-item.sidebar-nav-item
-            //- a.nav-link.js-scroll-trigger(href='/blog') Drafts
+            a.nav-link.js-scroll-trigger(href='/archive') Archive
   header.text-center.d-flex.flex-row.align-items-baseline.masthead(style='background: url("assets/img/bg-masthead.jpg") top, #efb503; height: max-content')
     nav.navbar.navbar-light.navbar-expand-md.visible.navigation-clean(style='background: #f1b600;')
       .container
-        a.navbar-brand(href='index.html') Creative Blog
+        a.navbar-brand(href='/') Creative Blog
         button.navbar-toggler(data-toggle='collapse' data-target='#navcol-1')
           span.sr-only Toggle navigation
           span.navbar-toggler-icon
@@ -38,7 +38,7 @@ body
             li.nav-item
               a.nav-link(href='/add-blog' style='color: rgb(0,0,0);border-style: none;border-color: var(--blue);') Add Blog
             li.nav-item
-              a.nav-link(href='/blog' style='color: rgb(14,14,14);font-size: 20px;background: rgba(255,255,255,0);') Draft
+              a.nav-link(href='/archive' style='color: rgb(14,14,14);font-size: 20px;background: rgba(255,255,255,0);') Archive
     block content
 
   footer.text-center.footer.mt-1

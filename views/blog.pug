@@ -13,6 +13,12 @@ block content
             h5.date-pos.text-center.text-black.p-3.mt-0.bg-white  #{blog.title} 
             p.m-t-15.mt-1 #{blog.description}
             p.m-t-20.mt-5 #{blog.text}
+        if blog.archive 
+          a.btn.btn-primary.btn-xl.js-scroll-trigger.mr-3(role='button' data-bss-hover-animate='pulse' href=`/archive/${blog.id}/unarchive`) Unarchive
+          a.btn.btn-primary.btn-xl.js-scroll-trigger(role='button' data-bss-hover-animate='pulse' href=`/archive/${blog.id}/delete`) Delete
+        else 
+          a.btn.btn-primary.btn-xl.js-scroll-trigger.mr-3(role='button' data-bss-hover-animate='pulse' href=`/all-blogs/${blog.id}/archive`) Archive
+          a.btn.btn-primary.btn-xl.js-scroll-trigger.mr-3(role='button' data-bss-hover-animate='pulse' href=`/all-blogs/${blog.id}/edit`) Edit
+          a.btn.btn-primary.btn-xl.js-scroll-trigger(role='button' data-bss-hover-animate='pulse' href=`/all-blogs/${blog.id}/delete`) Delete
 
-        a.btn.btn-primary.btn-xl.js-scroll-trigger.mr-3(role='button' data-bss-hover-animate='pulse' href=`/all-blogs/${blog.id}/edit`) Edit
-        a.btn.btn-primary.btn-xl.js-scroll-trigger(role='button' data-bss-hover-animate='pulse' href=`/all-blogs/${blog.id}/delete`) Delete
+          
